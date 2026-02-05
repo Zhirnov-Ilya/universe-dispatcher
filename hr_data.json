@@ -100,6 +100,81 @@
     },
     "items": [
       {
+        "id": 273,
+        "newsListId": 273,
+        "canEdit": false,
+        "title": "Mission completed: Кирилл Финаев!",
+        "description": null,
+        "imagePreview": "/storage/images/medialibrary/2026/6bfa36/preview-image-2wqqcg.png",
+        "imageHat": "/storage/images/medialibrary/2026/6bfa36/hat-joyfulcongratulations-1438x-n7.jpg",
+        "category": "Mission completed",
+        "tags": [],
+        "content": "<p><span class=\"an1\" char=\"🌟\">🌟</span><span style=\"line-height: 2rem; font-size: 12pt; color: currentcolor !important;\">Поздравляем </span><span style=\"line-height: 2rem; font-size: 12pt;\"><mention class=\"mentioned-user\" contenteditable=\"false\" id=\"135\" label=\"Финаев Кирилл\" avatar=\"/storage/images/avatar/2025/11/a3d272/l-avatar.jfif\" position=\"Руководитель\" phone=\"+79810021964\" telegram=\"MrBarsss\" email=\"kirill.finaev@universe-data.ru\" city=\"Санкт-Петербург\" department=\"1 и 2  линия поддержки\" manager=\"[object Object]\">Финаев Кирилл</mention> </span><span style=\"line-height: 2rem; font-size: 12pt; color: currentcolor !important;\">с успешным завершением испытательного срока на позиции Руководителя второй линии поддержки.<br><br>За это время Кирилл быстро прошел этап адаптации, интегрировался в команду и погрузился в ключевые бизнес-процессы компании. Он провел анализ текущих рабочих процессов технической поддержки, наладил операционное руководство командой и выстроил продуктивное взаимодействие со смежными отделами для повышения эффективности решения инцидентов. Кроме того, Кирилл внес первоначальные предложения по оптимизации и стандартизации рабочих процедур, а команда сохранила стабильные операционные показатели.<br><br>Отдельно отметим его участие в All Hands по геймификации: Кирилл подвел результаты года и рассказал о достижениях, став одним из тех, кто представил общий путь команды в рамках челленджа.<br><br>Кирилл, желаем тебе уверенного роста, сильной команды рядом, интересных задач и проектов, которыми можно по-настоящему гордиться!</span><span class=\"an1\" char=\"💫\">💫</span></p>",
+        "createdBy": {
+          "id": 106,
+          "name": "@ Юник",
+          "avatar": "/storage/images/avatar/2025/04/b47c5e/l-iunik_2.png",
+          "position": null
+        },
+        "createdAt": "5 фев 2026, 12:03",
+        "createdAtDiff": "2 часа назад",
+        "datePlan": null,
+        "enableComments": true,
+        "comments": [
+          {
+            "id": 472,
+            "canEdit": null,
+            "canDelete": null,
+            "createdBy": {
+              "id": 472,
+              "name": "",
+              "avatar": "",
+              "position": ""
+            },
+            "attachments": null,
+            "comment": null,
+            "date": null,
+            "dateDiff": null,
+            "reactions": {
+              "liked": false,
+              "countReactions": 0,
+              "users": []
+            }
+          }
+        ],
+        "count_comments": 1,
+        "reactions": [
+          {
+            "type": "U+2764",
+            "countReactions": 13,
+            "liked": false,
+            "users": [
+              {
+                "id": 108,
+                "name": "Шалапаев Дмитрий",
+                "avatar": "/storage/images/avatar/2025/05/08a0f9/l-5269456729802927560.jpg",
+                "position": "Юрист"
+              },
+              {
+                "id": 80,
+                "name": "Кренев Илья",
+                "avatar": "/storage/images/avatar/2026/02/8318d7/l-m3e2d8j8qm93d3dwc_waf94_btnt5bwk_kopiia.jpg",
+                "position": "Старший разработчик"
+              },
+              {
+                "id": 63,
+                "name": "Шишигин Сергей",
+                "avatar": "/storage/images/avatar/2025/05/b8ffe4/l-81c548b3_fd63_4974_bc6b_51f1009350e5.jpg",
+                "position": "Руководитель направления разработки"
+              }
+            ]
+          }
+        ],
+        "viewCount": 30,
+        "isPinnedGlobally": false,
+        "isPinnedForUser": false
+      },
+      {
         "id": 272,
         "newsListId": 272,
         "canEdit": false,
@@ -117,7 +192,7 @@
           "position": null
         },
         "createdAt": "4 фев 2026, 15:24",
-        "createdAtDiff": "18 часов назад",
+        "createdAtDiff": "23 часа назад",
         "datePlan": null,
         "enableComments": true,
         "comments": [],
@@ -125,31 +200,31 @@
         "reactions": [
           {
             "type": "U+2764",
-            "countReactions": 8,
+            "countReactions": 12,
             "liked": false,
             "users": [
               {
-                "id": 123,
-                "name": "Агафонов Николай",
-                "avatar": "/storage/images/avatar/2025/08/393280/l-photo_5289877783171955239_y.jpg",
-                "position": "Младший инженер технической поддержки"
+                "id": 63,
+                "name": "Шишигин Сергей",
+                "avatar": "/storage/images/avatar/2025/05/b8ffe4/l-81c548b3_fd63_4974_bc6b_51f1009350e5.jpg",
+                "position": "Руководитель направления разработки"
               },
               {
-                "id": 6,
-                "name": "Барышникова Валерия",
-                "avatar": "/storage/images/avatar/2025/09/394d5b/l-img_4353.jpg",
-                "position": "Главный бухгалтер"
+                "id": 11,
+                "name": "Барсов Кирилл",
+                "avatar": "/storage/images/avatar/2025/10/b4eee4/l-dsc_5693.jpg",
+                "position": "Старший менеджер по персоналу"
               },
               {
-                "id": 140,
-                "name": "Исаев Давид",
-                "avatar": "/storage/images/avatar/2025/12/7274d4/l-photo_2025_07_23_23_49_31.jpg",
-                "position": "Младший инженер по тестированию"
+                "id": 9,
+                "name": "Селиверстова Галина",
+                "avatar": "/storage/images/avatar/2025/08/871fe4/l-bicaeqnqeyu.jpg",
+                "position": "Руководитель"
               }
             ]
           }
         ],
-        "viewCount": 33,
+        "viewCount": 41,
         "isPinnedGlobally": false,
         "isPinnedForUser": false
       },
@@ -171,7 +246,7 @@
           "position": null
         },
         "createdAt": "2 фев 2026, 14:38",
-        "createdAtDiff": "2 дня назад",
+        "createdAtDiff": "3 дня назад",
         "datePlan": null,
         "enableComments": true,
         "comments": [
@@ -260,9 +335,15 @@
         "reactions": [
           {
             "type": "U+2764",
-            "countReactions": 24,
+            "countReactions": 25,
             "liked": false,
             "users": [
+              {
+                "id": 95,
+                "name": "Глущенко Анна",
+                "avatar": "/storage/images/avatar/2025/04/e6da5e/l-photo_2025_04_30_11_27_42.jpg",
+                "position": "Эксперт"
+              },
               {
                 "id": 130,
                 "name": "Чиграй Анастасия",
@@ -274,17 +355,11 @@
                 "name": "Новикова Анна",
                 "avatar": "/storage/images/avatar/2025/03/6e6453/l-photo_2025_03_25_11_37_23.jpg",
                 "position": "Администратор проектов"
-              },
-              {
-                "id": 6,
-                "name": "Барышникова Валерия",
-                "avatar": "/storage/images/avatar/2025/09/394d5b/l-img_4353.jpg",
-                "position": "Главный бухгалтер"
               }
             ]
           }
         ],
-        "viewCount": 98,
+        "viewCount": 100,
         "isPinnedGlobally": false,
         "isPinnedForUser": false
       },
@@ -306,7 +381,7 @@
           "position": null
         },
         "createdAt": "2 фев 2026, 14:15",
-        "createdAtDiff": "2 дня назад",
+        "createdAtDiff": "3 дня назад",
         "datePlan": null,
         "enableComments": true,
         "comments": [
@@ -355,9 +430,15 @@
         "reactions": [
           {
             "type": "U+2764",
-            "countReactions": 19,
+            "countReactions": 20,
             "liked": false,
             "users": [
+              {
+                "id": 95,
+                "name": "Глущенко Анна",
+                "avatar": "/storage/images/avatar/2025/04/e6da5e/l-photo_2025_04_30_11_27_42.jpg",
+                "position": "Эксперт"
+              },
               {
                 "id": 12,
                 "name": "Новикова Анна",
@@ -369,12 +450,6 @@
                 "name": "Барышникова Валерия",
                 "avatar": "/storage/images/avatar/2025/09/394d5b/l-img_4353.jpg",
                 "position": "Главный бухгалтер"
-              },
-              {
-                "id": 63,
-                "name": "Шишигин Сергей",
-                "avatar": "/storage/images/avatar/2025/05/b8ffe4/l-81c548b3_fd63_4974_bc6b_51f1009350e5.jpg",
-                "position": "Руководитель направления разработки"
               }
             ]
           }
@@ -401,7 +476,7 @@
           "position": null
         },
         "createdAt": "2 фев 2026, 14:08",
-        "createdAtDiff": "2 дня назад",
+        "createdAtDiff": "3 дня назад",
         "datePlan": null,
         "enableComments": true,
         "comments": [
@@ -494,7 +569,7 @@
             ]
           }
         ],
-        "viewCount": 59,
+        "viewCount": 60,
         "isPinnedGlobally": false,
         "isPinnedForUser": false
       },
@@ -516,7 +591,7 @@
           "position": null
         },
         "createdAt": "2 фев 2026, 12:38",
-        "createdAtDiff": "2 дня назад",
+        "createdAtDiff": "3 дня назад",
         "datePlan": null,
         "enableComments": true,
         "comments": [
@@ -671,7 +746,7 @@
           "position": null
         },
         "createdAt": "30 янв 2026, 14:39",
-        "createdAtDiff": "5 дней назад",
+        "createdAtDiff": "6 дней назад",
         "datePlan": null,
         "enableComments": true,
         "comments": [
@@ -784,7 +859,7 @@
             ]
           }
         ],
-        "viewCount": 92,
+        "viewCount": 93,
         "isPinnedGlobally": false,
         "isPinnedForUser": false
       },
@@ -1107,7 +1182,7 @@
             ]
           }
         ],
-        "viewCount": 43,
+        "viewCount": 45,
         "isPinnedGlobally": false,
         "isPinnedForUser": false
       },
@@ -1204,7 +1279,7 @@
           "position": null
         },
         "createdAt": "22 янв 2026, 11:31",
-        "createdAtDiff": "1 неделю назад",
+        "createdAtDiff": "2 недели назад",
         "datePlan": null,
         "enableComments": true,
         "comments": [],
@@ -1239,64 +1314,10 @@
         "viewCount": 47,
         "isPinnedGlobally": false,
         "isPinnedForUser": false
-      },
-      {
-        "id": 261,
-        "newsListId": 261,
-        "canEdit": false,
-        "title": "Вебинар «График отпусков: просто о важном»",
-        "description": null,
-        "imagePreview": "/storage/images/medialibrary/2026/807ef5/preview-vebinar-grafik-otpuskov-prosto.png",
-        "imageHat": "/storage/images/medialibrary/2026/807ef5/hat-fon-3-sapka-mk-gp8jny.png",
-        "category": "Важные события",
-        "tags": [],
-        "content": "<p><span style=\"line-height: 2rem; font-size: 12pt; color: currentcolor !important;\"><strong><em>Дата и время: 28 января в 15.30 <br>Продолжительность: 1 час<br>Формат: онлайн <br>Спикер: Валерия Барышникова, Главный бухгалтер<br>Целевая аудитория: все сотрудники компании</em></strong><br><br>На вебинаре вы узнаете, почему график отпусков - это не формальность, а удобный инструмент, который помогает сотрудникам и компании планировать отдых без конфликтов и авралов. На вебинаре будут разобраны базовые правила предоставления отпусков, типичные ситуации с переносами и способы избежать недоразумений и лишнего стресса.<br><br>Участники узнают, зачем компании нужен график отпусков и как выглядит «внутренняя кухня» оформления: в какие сроки издается приказ и когда поступают отпускные. На практическом примере будет показано, как корректно оформить перенос отпуска, какие риски учитывать и на какие детали обращать внимание, а в завершение спикер ответит на самые частые вопросы сотрудников.<br><br></span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://calendar.360.yandex.ru/event/2922932740?applyToFuture=0&amp;event_date=2026-01-28T12%3A30%3A00&amp;layerId=21028851&amp;show_date=2026-01-28\"><span style=\"line-height: 2rem; font-size: 12pt; color: currentcolor !important;\">Ссылка на событие в календаре</span></a><span style=\"line-height: 2rem; font-size: 12pt; color: currentcolor !important;\"> <br><br></span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://pruffme.com/landing/universe-data/otpusk\"><span style=\"line-height: 2rem; font-size: 12pt; color: currentcolor !important;\">Ссылка на онлайн-трансляцию</span></a><span style=\"line-height: 2rem; font-size: 12pt; color: currentcolor !important;\"> </span></p>",
-        "createdBy": {
-          "id": 106,
-          "name": "@ Юник",
-          "avatar": "/storage/images/avatar/2025/04/b47c5e/l-iunik_2.png",
-          "position": null
-        },
-        "createdAt": "21 янв 2026, 12:43",
-        "createdAtDiff": "2 недели назад",
-        "datePlan": null,
-        "enableComments": true,
-        "comments": [],
-        "count_comments": 0,
-        "reactions": [
-          {
-            "type": "U+2764",
-            "countReactions": 8,
-            "liked": false,
-            "users": [
-              {
-                "id": 11,
-                "name": "Барсов Кирилл",
-                "avatar": "/storage/images/avatar/2025/10/b4eee4/l-dsc_5693.jpg",
-                "position": "Старший менеджер по персоналу"
-              },
-              {
-                "id": 63,
-                "name": "Шишигин Сергей",
-                "avatar": "/storage/images/avatar/2025/05/b8ffe4/l-81c548b3_fd63_4974_bc6b_51f1009350e5.jpg",
-                "position": "Руководитель направления разработки"
-              },
-              {
-                "id": 102,
-                "name": "Фундурян Юрий",
-                "avatar": "/storage/images/avatar/2025/04/731be0/l-islands_200.webp",
-                "position": "Старший разработчик (BE)"
-              }
-            ]
-          }
-        ],
-        "viewCount": 33,
-        "isPinnedGlobally": false,
-        "isPinnedForUser": false
       }
     ],
     "pagination": {
-      "total": 267,
+      "total": 268,
       "count": 12,
       "perPage": 12,
       "currentPage": 1,

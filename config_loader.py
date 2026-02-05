@@ -6,7 +6,7 @@ class Config:
 
     def __init__(self):
 
-        self.config_dir = Path("universe-dispetcher/config")
+        self.config_dir = Path("config")
         
         if not self.config_dir.exists():
             self.config_dir = Path(".")

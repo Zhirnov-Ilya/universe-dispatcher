@@ -60,7 +60,6 @@ class TelegramDelivery:
                 disable_web_page_preview = True
             )
 
-            print(f"Отправлено в Telegram: {news_item['title']}")
             return True
 
         except Exception as e:
@@ -80,6 +79,7 @@ class TelegramDelivery:
             successful = 0
             failed = 0
 
+            print(f"Отправлено в Telegram: {news_item['title']}")
             for result in results:
                 if isinstance(result, bool) and result:
                     successful += 1

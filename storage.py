@@ -20,6 +20,7 @@ class NewsStorage:
         if self.connection is None:
             self.connection = await aiosqlite.connect(self.db_path)
             await self._create_table()
+            await self.initialize_last_id("hr_portal", "hr_0")
             print("Подключение к БД выполнено")
 
     async def _create_table(self):
@@ -42,6 +43,18 @@ class NewsStorage:
 
         await self.connection.commit()
     
+    async def initialize_last_id(self, source_code, default_id="hr_0"):
+        async with self.connection.execute(
+            "SELECT COUNT(*) FROM sent_news WHERE source = ?", (source_code,)
+        ) as cursor:
+            count = (await cursor.fetchone())[0]
+            if count == 0:
+                await self.connection.execute(
+                    "INSERT INTO sent_news (id, source) VALUES (?, ?)",
+                    (default_id, source_code)
+                )
+                await self.connection.commit()
+
     async def add_user(self, user_id, chat_id, user_name):
         try:
             await self.connection.execute('''

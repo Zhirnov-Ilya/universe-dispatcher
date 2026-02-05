@@ -4,7 +4,7 @@ services:
   bot:
     build: .
     container_name: universe-telegram-bot
-    # restart: always
+    restart: always
     volumes:
       - ./data:/app/data 
       - ./config:/app/config
