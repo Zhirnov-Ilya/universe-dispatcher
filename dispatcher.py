@@ -32,7 +32,7 @@ class Dispatcher:
             
             chat_ids = await self.storage.get_all_activate_users()
             for news in new_news:
-                success = await self.telegram.send_to_many(news, ['5671771943'])
+                success = await self.telegram.send_to_many(news, chat_ids)
 
         return total_new
 
