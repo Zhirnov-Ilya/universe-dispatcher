@@ -20,7 +20,7 @@ class NewsStorage:
         if self.connection is None:
             self.connection = await aiosqlite.connect(self.db_path)
             await self._create_table()
-            await self.initialize_last_id("hr_portal", "hr_0")
+            await self.initialize_last_id("hr_portal", "hr_275")
             print("Подключение к БД выполнено")
 
     async def _create_table(self):
@@ -32,6 +32,7 @@ class NewsStorage:
             sent_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
             )
         ''')
+        print("В базе данных создана таблица sent_news")
 
         await self.connection.execute('''
         CREATE TABLE IF NOT EXISTS users (
@@ -40,6 +41,8 @@ class NewsStorage:
             user_name TEXT,
             is_active BOOLEAN DEFAULT 1)        
         ''')
+        print("В базе данных создана таблица users")
+
 
         await self.connection.commit()
     
@@ -54,6 +57,7 @@ class NewsStorage:
                     (default_id, source_code)
                 )
                 await self.connection.commit()
+                print(f"Вставка начального значаения hr_id = {default_id}")
 
     async def add_user(self, user_id, chat_id, user_name):
         try:
