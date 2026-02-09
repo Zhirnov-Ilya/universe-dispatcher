@@ -8,7 +8,7 @@ from telegram_bot import NewsBot
 
 async def run_all():
 
-    print("Запуск Universe Dispatch")
+    print("Запуск Universe Dispatcher!")
 
     config = Config()
 
