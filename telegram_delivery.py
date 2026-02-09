@@ -16,7 +16,6 @@ class TelegramDelivery:
         content = self._escape_html(news_item['content'])
         rubric = self._escape_html(news_item['rubric'])
         link = self._escape_html(news_item['link'])
-        print(f"link: {link}")
 
         rubric_emojis = {
             'Anniversary time': '🎉',
