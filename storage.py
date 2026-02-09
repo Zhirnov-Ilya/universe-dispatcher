@@ -20,7 +20,7 @@ class NewsStorage:
         if self.connection is None:
             self.connection = await aiosqlite.connect(self.db_path)
             await self._create_table()
-            await self.initialize_last_id("hr_portal", "hr_275")
+            await self.initialize_last_id("hr_portal", "hr_0")
             print("Подключение к БД выполнено")
 
     async def _create_table(self):
