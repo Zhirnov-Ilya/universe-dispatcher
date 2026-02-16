@@ -31,7 +31,15 @@ class Config:
                 return { 
                     'base_url': os.getenv('YX_BASE_URL'),
                     'bot_token': os.getenv('YX_BOT_TOKEN'),
-                    'user_id': os.getenv('YX_LOGIN')
+                    'user_id': os.getenv('YX_LOGIN'),
+                    'set_webhook': os.getenv('YX_API_SET_WEBHOOK'),
+                    'send_message_url': os.getenv('YX_API_SEND_MESSAGE_URL'),
+                    'send_image_url': os.getenv('YX_API_SEND_IMAGE_URL'),
+                    'disk_token': os.getenv('YX_DISK_TOKEN')
+                }
+            elif section == "server":
+                return{
+                    'base_url': os.getenv('SR_URL')
                 }
 
         except Exception as ex:
@@ -40,5 +48,5 @@ class Config:
 if __name__ == "__main__":
 
     config = Config()
-    data = config.load_config('telegram')
-    print("Содержимое .env: ", data['bot_token'])
+    data = config.load_config('server')
+    print("Содержимое .env: ", data['base_url'])

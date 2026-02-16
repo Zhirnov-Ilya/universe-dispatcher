@@ -100,6 +100,330 @@
     },
     "items": [
       {
+        "id": 280,
+        "newsListId": 280,
+        "canEdit": false,
+        "title": "Anniversary time: Ляшук Александр!",
+        "description": null,
+        "imagePreview": "/storage/images/medialibrary/2026/deeeb6/preview-islands-200-2.jpg",
+        "imageHat": "/storage/images/medialibrary/2026/deeeb6/hat-joyfulcongratulations-1438x-n7.jpg",
+        "category": "Anniversary time",
+        "tags": [],
+        "content": "<p><span style=\"line-height: 2rem; font-size: 12pt;\">Поздравляем с годом в компании <mention class=\"mentioned-user\" contenteditable=\"false\" id=\"34\" label=\"Ляшук Александр\" avatar=\"/storage/images/avatar/2025/04/6c953e/l-islands_200.webp\" position=\"Руководитель проектов\" phone=\"+79123873036\" email=\"aleksandr.lyashuk@universe-data.ru\" city=\"Омск\" department=\"Проектный офис\" manager=\"[object Object]\">Ляшук Александр</mention>!<br>Рады, что этот путь мы прошли вместе. Спасибо за вклад в общее дело и участие в жизни команды.</span></p><p><span style=\"line-height: 2rem; font-size: 12pt;\">Желаем дальнейшего развития, интересных задач и новых достижений. Пусть впереди будет ещё много успешных проектов и приятных рабочих моментов! 🎉</span></p>",
+        "createdBy": {
+          "id": 106,
+          "name": "@ Юник",
+          "avatar": "/storage/images/avatar/2025/04/b47c5e/l-iunik_2.png",
+          "position": null
+        },
+        "createdAt": "11 фев 2026, 16:08",
+        "createdAtDiff": "1 день назад",
+        "datePlan": null,
+        "enableComments": true,
+        "comments": [],
+        "count_comments": 0,
+        "reactions": [
+          {
+            "type": "U+2764",
+            "countReactions": 5,
+            "liked": false,
+            "users": [
+              {
+                "id": 18,
+                "name": "Панина Наталья",
+                "avatar": "/storage/images/avatar/2025/04/82c73f/l-chik9802.jpg",
+                "position": "Руководитель"
+              },
+              {
+                "id": 12,
+                "name": "Новикова Анна",
+                "avatar": "/storage/images/avatar/2025/03/6e6453/l-photo_2025_03_25_11_37_23.jpg",
+                "position": "Администратор проектов"
+              },
+              {
+                "id": 11,
+                "name": "Барсов Кирилл",
+                "avatar": "/storage/images/avatar/2025/10/b4eee4/l-dsc_5693.jpg",
+                "position": "Старший менеджер по персоналу"
+              }
+            ]
+          }
+        ],
+        "viewCount": 32,
+        "isPinnedGlobally": false,
+        "isPinnedForUser": false
+      },
+      {
+        "id": 279,
+        "newsListId": 279,
+        "canEdit": false,
+        "title": "Farewell message: Гончарова Галина!",
+        "description": null,
+        "imagePreview": "/storage/images/medialibrary/2026/10827b/preview-img-1574.jpg",
+        "imageHat": "/storage/images/medialibrary/2026/10827b/hat-watercolor-wild-flowers-border.jpg",
+        "category": "Farewell message",
+        "tags": [],
+        "content": "<p><span style=\"line-height: 2rem; font-size: 12pt;\">Всем привет!</span></p><p><span style=\"line-height: 2rem; font-size: 12pt;\">Сегодня последний день в компании у <mention class=\"mentioned-user\" contenteditable=\"false\" id=\"36\" label=\"Гончарова Галина\" avatar=\"/storage/images/avatar/2025/04/d00433/l-dsc_0280_small.jpg\" position=\"Руководитель ИТ проектов\" phone=\"+79036166369\" email=\"galina.goncharova@universe-data.ru\" city=\"Москва\" department=\"Проектный офис\" manager=\"[object Object]\">Гончарова Галина</mention> </span></p><p><span style=\"line-height: 2rem; font-size: 12pt;\">За все годы работы Галина показала высокую компетентность и вовлеченность в руководстве проектов и в сфере геймификации, и особую энергетику в корпоративных и командных встречах!</span></p><p><span style=\"line-height: 2rem; font-size: 12pt;\">Особо хотели бы отметить неоценимый вклад в проект ЦБ. Благодаря Галине удалось сделать х3 скоупа от изначально согласованного, получить целевую маржинальность, а так же сдать все в срок в 2025 году.</span></p><p><span class=\"an1\" char=\"💙\">💙</span><span style=\"line-height: 2rem; font-size: 12pt;\">Галина, спасибо, что была с нами всё это время! Без тебя мы не достигли бы таких высот! </span></p>",
+        "createdBy": {
+          "id": 106,
+          "name": "@ Юник",
+          "avatar": "/storage/images/avatar/2025/04/b47c5e/l-iunik_2.png",
+          "position": null
+        },
+        "createdAt": "11 фев 2026, 15:00",
+        "createdAtDiff": "1 день назад",
+        "datePlan": null,
+        "enableComments": true,
+        "comments": [
+          {
+            "id": 489,
+            "canEdit": null,
+            "canDelete": null,
+            "createdBy": {
+              "id": 489,
+              "name": "",
+              "avatar": "",
+              "position": ""
+            },
+            "attachments": null,
+            "comment": null,
+            "date": null,
+            "dateDiff": null,
+            "reactions": {
+              "liked": false,
+              "countReactions": 0,
+              "users": []
+            }
+          },
+          {
+            "id": 490,
+            "canEdit": null,
+            "canDelete": null,
+            "createdBy": {
+              "id": 490,
+              "name": "",
+              "avatar": "",
+              "position": ""
+            },
+            "attachments": null,
+            "comment": null,
+            "date": null,
+            "dateDiff": null,
+            "reactions": {
+              "liked": false,
+              "countReactions": 0,
+              "users": []
+            }
+          },
+          {
+            "id": 491,
+            "canEdit": null,
+            "canDelete": null,
+            "createdBy": {
+              "id": 491,
+              "name": "",
+              "avatar": "",
+              "position": ""
+            },
+            "attachments": null,
+            "comment": null,
+            "date": null,
+            "dateDiff": null,
+            "reactions": {
+              "liked": false,
+              "countReactions": 0,
+              "users": []
+            }
+          },
+          {
+            "id": 492,
+            "canEdit": null,
+            "canDelete": null,
+            "createdBy": {
+              "id": 492,
+              "name": "",
+              "avatar": "",
+              "position": ""
+            },
+            "attachments": null,
+            "comment": null,
+            "date": null,
+            "dateDiff": null,
+            "reactions": {
+              "liked": false,
+              "countReactions": 0,
+              "users": []
+            }
+          },
+          {
+            "id": 493,
+            "canEdit": null,
+            "canDelete": null,
+            "createdBy": {
+              "id": 493,
+              "name": "",
+              "avatar": "",
+              "position": ""
+            },
+            "attachments": null,
+            "comment": null,
+            "date": null,
+            "dateDiff": null,
+            "reactions": {
+              "liked": false,
+              "countReactions": 0,
+              "users": []
+            }
+          }
+        ],
+        "count_comments": 5,
+        "reactions": [
+          {
+            "type": "U+2764",
+            "countReactions": 16,
+            "liked": false,
+            "users": [
+              {
+                "id": 130,
+                "name": "Чиграй Анастасия",
+                "avatar": "/storage/images/avatar/2025/09/3cc257/l-photo_2025_09_29_15_32_38.jpg",
+                "position": "Младший аналитик"
+              },
+              {
+                "id": 18,
+                "name": "Панина Наталья",
+                "avatar": "/storage/images/avatar/2025/04/82c73f/l-chik9802.jpg",
+                "position": "Руководитель"
+              },
+              {
+                "id": 12,
+                "name": "Новикова Анна",
+                "avatar": "/storage/images/avatar/2025/03/6e6453/l-photo_2025_03_25_11_37_23.jpg",
+                "position": "Администратор проектов"
+              }
+            ]
+          }
+        ],
+        "viewCount": 69,
+        "isPinnedGlobally": false,
+        "isPinnedForUser": false
+      },
+      {
+        "id": 278,
+        "newsListId": 278,
+        "canEdit": false,
+        "title": "Mission completed: Дарья Тарасова!",
+        "description": null,
+        "imagePreview": "/storage/images/medialibrary/2026/c6f305/preview-img-20260210-145233.jpg",
+        "imageHat": "/storage/images/medialibrary/2026/c6f305/hat-joyfulcongratulations-1438x-n7.jpg",
+        "category": "Mission completed",
+        "tags": [],
+        "content": "<p><span class=\"an1\" char=\"🎉\">🎉</span><span style=\"line-height: 2rem; font-size: 12pt; color: currentcolor !important;\">Сегодня поздравляем </span><span style=\"line-height: 2rem; font-size: 12pt;\"><mention class=\"mentioned-user\" contenteditable=\"false\" id=\"136\" label=\"Тарасова Дарья\" avatar=\"/storage/images/avatar/2025/11/7fc74e/l-photo_2025_11_10_11_32_56.jpg\" position=\"Бизнес аналитик\" phone=\"+79997204589\" email=\"daria.tarasova@universe-data.ru\" department=\"Отдел особо значимых проектов\" manager=\"[object Object]\">Тарасова Дарья</mention> </span><span style=\"line-height: 2rem; font-size: 12pt; color: currentcolor !important;\">с успешным завершением испытательного срока на позиции бизнес‑аналитика.<br><br>За это время Дарья погрузилась в требования заказчика ГК «Росатом» и детально разобралась в задачах по закреплённым за ней модулям. Наладила эффективную коммуникацию с коллегами и представителями заказчика: участвовала в обсуждении и уточнении требований, в своей зоне ответственности согласовала с заказчиком несколько доработок, подготовила постановки на разработку и обеспечила их сопровождение.<br><br>Дарья, желаем тебе дальше усиливать экспертизу в бизнес‑анализе, влиять на продукты через качественные требования и получать удовольствие от сложных задач и командной работы!</span><span class=\"an1\" char=\"✨\">✨</span></p>",
+        "createdBy": {
+          "id": 106,
+          "name": "@ Юник",
+          "avatar": "/storage/images/avatar/2025/04/b47c5e/l-iunik_2.png",
+          "position": null
+        },
+        "createdAt": "10 фев 2026, 15:12",
+        "createdAtDiff": "2 дня назад",
+        "datePlan": null,
+        "enableComments": true,
+        "comments": [
+          {
+            "id": 486,
+            "canEdit": null,
+            "canDelete": null,
+            "createdBy": {
+              "id": 486,
+              "name": "",
+              "avatar": "",
+              "position": ""
+            },
+            "attachments": null,
+            "comment": null,
+            "date": null,
+            "dateDiff": null,
+            "reactions": {
+              "liked": false,
+              "countReactions": 0,
+              "users": []
+            }
+          },
+          {
+            "id": 487,
+            "canEdit": null,
+            "canDelete": null,
+            "createdBy": {
+              "id": 487,
+              "name": "",
+              "avatar": "",
+              "position": ""
+            },
+            "attachments": null,
+            "comment": null,
+            "date": null,
+            "dateDiff": null,
+            "reactions": {
+              "liked": false,
+              "countReactions": 0,
+              "users": []
+            }
+          },
+          {
+            "id": 488,
+            "canEdit": null,
+            "canDelete": null,
+            "createdBy": {
+              "id": 488,
+              "name": "",
+              "avatar": "",
+              "position": ""
+            },
+            "attachments": null,
+            "comment": null,
+            "date": null,
+            "dateDiff": null,
+            "reactions": {
+              "liked": false,
+              "countReactions": 0,
+              "users": []
+            }
+          }
+        ],
+        "count_comments": 3,
+        "reactions": [
+          {
+            "type": "U+2764",
+            "countReactions": 13,
+            "liked": false,
+            "users": [
+              {
+                "id": 18,
+                "name": "Панина Наталья",
+                "avatar": "/storage/images/avatar/2025/04/82c73f/l-chik9802.jpg",
+                "position": "Руководитель"
+              },
+              {
+                "id": 11,
+                "name": "Барсов Кирилл",
+                "avatar": "/storage/images/avatar/2025/10/b4eee4/l-dsc_5693.jpg",
+                "position": "Старший менеджер по персоналу"
+              },
+              {
+                "id": 21,
+                "name": "Ерыпалов Кирилл",
+                "avatar": "/storage/images/avatar/2025/04/fcda5b/l-islands_200.webp",
+                "position": "Младший аналитик"
+              }
+            ]
+          }
+        ],
+        "viewCount": 41,
+        "isPinnedGlobally": false,
+        "isPinnedForUser": false
+      },
+      {
         "id": 277,
         "newsListId": 277,
         "canEdit": false,
@@ -117,7 +441,7 @@
           "position": null
         },
         "createdAt": "9 фев 2026, 14:01",
-        "createdAtDiff": "2 часа назад",
+        "createdAtDiff": "3 дня назад",
         "datePlan": null,
         "enableComments": true,
         "comments": [
@@ -286,31 +610,31 @@
         "reactions": [
           {
             "type": "U+2764",
-            "countReactions": 16,
+            "countReactions": 19,
             "liked": false,
             "users": [
               {
-                "id": 11,
-                "name": "Барсов Кирилл",
-                "avatar": "/storage/images/avatar/2025/10/b4eee4/l-dsc_5693.jpg",
-                "position": "Старший менеджер по персоналу"
+                "id": 63,
+                "name": "Шишигин Сергей",
+                "avatar": "/storage/images/avatar/2025/05/b8ffe4/l-81c548b3_fd63_4974_bc6b_51f1009350e5.jpg",
+                "position": "Руководитель направления разработки"
               },
               {
-                "id": 21,
-                "name": "Ерыпалов Кирилл",
-                "avatar": "/storage/images/avatar/2025/04/fcda5b/l-islands_200.webp",
-                "position": "Младший аналитик"
-              },
-              {
-                "id": 9,
-                "name": "Селиверстова Галина",
-                "avatar": "/storage/images/avatar/2025/08/871fe4/l-bicaeqnqeyu.jpg",
+                "id": 18,
+                "name": "Панина Наталья",
+                "avatar": "/storage/images/avatar/2025/04/82c73f/l-chik9802.jpg",
                 "position": "Руководитель"
+              },
+              {
+                "id": 6,
+                "name": "Барышникова Валерия",
+                "avatar": "/storage/images/avatar/2025/09/394d5b/l-img_4353.jpg",
+                "position": "Главный бухгалтер"
               }
             ]
           }
         ],
-        "viewCount": 56,
+        "viewCount": 99,
         "isPinnedGlobally": false,
         "isPinnedForUser": false
       },
@@ -332,39 +656,60 @@
           "position": null
         },
         "createdAt": "9 фев 2026, 12:13",
-        "createdAtDiff": "4 часа назад",
+        "createdAtDiff": "3 дня назад",
         "datePlan": null,
         "enableComments": true,
-        "comments": [],
-        "count_comments": 0,
+        "comments": [
+          {
+            "id": 485,
+            "canEdit": null,
+            "canDelete": null,
+            "createdBy": {
+              "id": 485,
+              "name": "",
+              "avatar": "",
+              "position": ""
+            },
+            "attachments": null,
+            "comment": null,
+            "date": null,
+            "dateDiff": null,
+            "reactions": {
+              "liked": false,
+              "countReactions": 0,
+              "users": []
+            }
+          }
+        ],
+        "count_comments": 1,
         "reactions": [
           {
             "type": "U+2764",
-            "countReactions": 11,
+            "countReactions": 14,
             "liked": false,
             "users": [
               {
-                "id": 11,
-                "name": "Барсов Кирилл",
-                "avatar": "/storage/images/avatar/2025/10/b4eee4/l-dsc_5693.jpg",
-                "position": "Старший менеджер по персоналу"
+                "id": 63,
+                "name": "Шишигин Сергей",
+                "avatar": "/storage/images/avatar/2025/05/b8ffe4/l-81c548b3_fd63_4974_bc6b_51f1009350e5.jpg",
+                "position": "Руководитель направления разработки"
               },
               {
-                "id": 4,
-                "name": "Старостина Римма",
-                "avatar": "/storage/images/avatar/2025/03/153803/l-dlia_avy.jpg",
-                "position": "Директор по персоналу"
+                "id": 17,
+                "name": "Лукашов Александр",
+                "avatar": "/storage/images/avatar/2025/05/3928b4/l-avatar.jpg",
+                "position": "Руководитель"
               },
               {
-                "id": 92,
-                "name": "Павлюкова Ольга",
-                "avatar": "/storage/images/avatar/2025/09/94d4e1/l-photo_2025_07_05_21_52_45.jpg",
-                "position": "Инженер по тестированию"
+                "id": 110,
+                "name": "Лысенкова Екатерина",
+                "avatar": "/storage/images/avatar/2025/05/00db47/l-img_20240713_194823_725.jpg",
+                "position": "Младший инженер по тестированию"
               }
             ]
           }
         ],
-        "viewCount": 63,
+        "viewCount": 80,
         "isPinnedGlobally": false,
         "isPinnedForUser": false
       },
@@ -386,7 +731,7 @@
           "position": null
         },
         "createdAt": "9 фев 2026, 11:39",
-        "createdAtDiff": "5 часов назад",
+        "createdAtDiff": "3 дня назад",
         "datePlan": null,
         "enableComments": true,
         "comments": [
@@ -455,31 +800,31 @@
         "reactions": [
           {
             "type": "U+2764",
-            "countReactions": 14,
+            "countReactions": 16,
             "liked": false,
             "users": [
+              {
+                "id": 63,
+                "name": "Шишигин Сергей",
+                "avatar": "/storage/images/avatar/2025/05/b8ffe4/l-81c548b3_fd63_4974_bc6b_51f1009350e5.jpg",
+                "position": "Руководитель направления разработки"
+              },
+              {
+                "id": 140,
+                "name": "Исаев Давид",
+                "avatar": "/storage/images/avatar/2025/12/7274d4/l-photo_2025_07_23_23_49_31.jpg",
+                "position": "Младший инженер по тестированию"
+              },
               {
                 "id": 95,
                 "name": "Глущенко Анна",
                 "avatar": "/storage/images/avatar/2025/04/e6da5e/l-photo_2025_04_30_11_27_42.jpg",
                 "position": "Эксперт"
-              },
-              {
-                "id": 18,
-                "name": "Панина Наталья",
-                "avatar": "/storage/images/avatar/2025/04/82c73f/l-chik9802.jpg",
-                "position": "Руководитель"
-              },
-              {
-                "id": 110,
-                "name": "Лысенкова Екатерина",
-                "avatar": "/storage/images/avatar/2025/05/00db47/l-img_20240713_194823_725.jpg",
-                "position": "Младший инженер по тестированию"
               }
             ]
           }
         ],
-        "viewCount": 29,
+        "viewCount": 40,
         "isPinnedGlobally": false,
         "isPinnedForUser": false
       },
@@ -501,7 +846,7 @@
           "position": null
         },
         "createdAt": "9 фев 2026, 10:39",
-        "createdAtDiff": "6 часов назад",
+        "createdAtDiff": "3 дня назад",
         "datePlan": null,
         "enableComments": true,
         "comments": [],
@@ -533,7 +878,7 @@
             ]
           }
         ],
-        "viewCount": 17,
+        "viewCount": 24,
         "isPinnedGlobally": false,
         "isPinnedForUser": false
       },
@@ -555,7 +900,7 @@
           "position": null
         },
         "createdAt": "5 фев 2026, 12:03",
-        "createdAtDiff": "4 дня назад",
+        "createdAtDiff": "1 неделю назад",
         "datePlan": null,
         "enableComments": true,
         "comments": [
@@ -628,7 +973,7 @@
             ]
           }
         ],
-        "viewCount": 66,
+        "viewCount": 69,
         "isPinnedGlobally": false,
         "isPinnedForUser": false
       },
@@ -650,7 +995,7 @@
           "position": null
         },
         "createdAt": "4 фев 2026, 15:24",
-        "createdAtDiff": "5 дней назад",
+        "createdAtDiff": "1 неделю назад",
         "datePlan": null,
         "enableComments": true,
         "comments": [],
@@ -682,7 +1027,7 @@
             ]
           }
         ],
-        "viewCount": 47,
+        "viewCount": 48,
         "isPinnedGlobally": false,
         "isPinnedForUser": false
       },
@@ -912,7 +1257,7 @@
             ]
           }
         ],
-        "viewCount": 74,
+        "viewCount": 75,
         "isPinnedGlobally": false,
         "isPinnedForUser": false
       },
@@ -1027,518 +1372,13 @@
             ]
           }
         ],
-        "viewCount": 61,
-        "isPinnedGlobally": false,
-        "isPinnedForUser": false
-      },
-      {
-        "id": 268,
-        "newsListId": 268,
-        "canEdit": false,
-        "title": "Anniversary time: Павлова Наталья и Даубарг Роман!",
-        "description": null,
-        "imagePreview": "/storage/images/medialibrary/2026/9d9a08/preview-mycollages-3.jpg",
-        "imageHat": "/storage/images/medialibrary/2026/9d9a08/hat-joyfulcongratulations-1438x-n7.jpg",
-        "category": "Anniversary time",
-        "tags": [],
-        "content": "<p><span style=\"line-height: 2rem; font-size: 12pt;\">Всем привет!</span><span class=\"an1\" char=\"😊\">😊</span></p><p style=\"line-height: 115%;\"><span style=\"line-height: 2rem; font-size: 12pt;\">На этих выходных было аж два юбилея в компании!</span></p><p style=\"line-height: 115%;\"><span style=\"line-height: 2rem; font-size: 12pt;\">31.01 </span><span style=\"line-height: 2rem; font-size: 12pt;\"><mention class=\"mentioned-user\" contenteditable=\"false\" id=\"1\" label=\"Даубарг Роман\" avatar=\"/storage/images/avatar/2025/03/4b491c/l-img_20250320_120048.jpg\" position=\"Руководитель\" phone=\"+799992466752\" email=\"roman.daubarg@universe-data.ru\" city=\"Санкт-Петербург\" department=\"Отдел ИТ\" manager=\"[object Object]\">Даубарг Роман</mention> </span><span style=\"line-height: 2rem; font-size: 12pt;\">отметил год в компании и 1.02 </span><span style=\"line-height: 2rem; font-size: 12pt;\"><mention class=\"mentioned-user\" contenteditable=\"false\" id=\"8\" label=\"Павлова Наталья\" avatar=\"/storage/images/avatar/2025/03/1406f2/l-avatar_dlia_pocty.jpg\" position=\"Руководитель\" phone=\"+79213594892\" email=\"natalia.pavlova@universe-data.ru\" city=\"Санкт-Петербург\" department=\"Офис официальных вопросов\" manager=\"[object Object]\">Павлова Наталья</mention> </span><span style=\"line-height: 2rem; font-size: 12pt;\">отметила 10 лет!</span></p><p style=\"line-height: 115%;\"><span style=\"line-height: 2rem; font-size: 12pt; color: rgb(15, 17, 21);\">Желаем, чтобы здесь вам по-прежнему было комфортно и интересно. Новых целей, которые будут вдохновлять, крутых идей и их блестящей реализации! Пусть ваша энергия и оптимизм никогда не иссякают.</span></p><p style=\"line-height: 115%;\"><span style=\"line-height: 2rem; font-size: 12pt; color: rgb(15, 17, 21);\">Отдельно желаем отличного баланса между работой и жизнью вне офиса, путешествий, увлечений и, конечно, крепкого здоровья! Мы рады, что вы с нами!</span><span class=\"an1\" char=\"✨\">✨</span></p>",
-        "createdBy": {
-          "id": 106,
-          "name": "@ Юник",
-          "avatar": "/storage/images/avatar/2025/04/b47c5e/l-iunik_2.png",
-          "position": null
-        },
-        "createdAt": "2 фев 2026, 12:38",
-        "createdAtDiff": "1 неделю назад",
-        "datePlan": null,
-        "enableComments": true,
-        "comments": [
-          {
-            "id": 458,
-            "canEdit": null,
-            "canDelete": null,
-            "createdBy": {
-              "id": 458,
-              "name": "",
-              "avatar": "",
-              "position": ""
-            },
-            "attachments": null,
-            "comment": null,
-            "date": null,
-            "dateDiff": null,
-            "reactions": {
-              "liked": false,
-              "countReactions": 0,
-              "users": []
-            }
-          },
-          {
-            "id": 459,
-            "canEdit": null,
-            "canDelete": null,
-            "createdBy": {
-              "id": 459,
-              "name": "",
-              "avatar": "",
-              "position": ""
-            },
-            "attachments": null,
-            "comment": null,
-            "date": null,
-            "dateDiff": null,
-            "reactions": {
-              "liked": false,
-              "countReactions": 0,
-              "users": []
-            }
-          },
-          {
-            "id": 460,
-            "canEdit": null,
-            "canDelete": null,
-            "createdBy": {
-              "id": 460,
-              "name": "",
-              "avatar": "",
-              "position": ""
-            },
-            "attachments": null,
-            "comment": null,
-            "date": null,
-            "dateDiff": null,
-            "reactions": {
-              "liked": false,
-              "countReactions": 0,
-              "users": []
-            }
-          },
-          {
-            "id": 462,
-            "canEdit": null,
-            "canDelete": null,
-            "createdBy": {
-              "id": 462,
-              "name": "",
-              "avatar": "",
-              "position": ""
-            },
-            "attachments": null,
-            "comment": null,
-            "date": null,
-            "dateDiff": null,
-            "reactions": {
-              "liked": false,
-              "countReactions": 0,
-              "users": []
-            }
-          },
-          {
-            "id": 469,
-            "canEdit": null,
-            "canDelete": null,
-            "createdBy": {
-              "id": 469,
-              "name": "",
-              "avatar": "",
-              "position": ""
-            },
-            "attachments": null,
-            "comment": null,
-            "date": null,
-            "dateDiff": null,
-            "reactions": {
-              "liked": false,
-              "countReactions": 0,
-              "users": []
-            }
-          }
-        ],
-        "count_comments": 5,
-        "reactions": [
-          {
-            "type": "U+2764",
-            "countReactions": 11,
-            "liked": false,
-            "users": [
-              {
-                "id": 9,
-                "name": "Селиверстова Галина",
-                "avatar": "/storage/images/avatar/2025/08/871fe4/l-bicaeqnqeyu.jpg",
-                "position": "Руководитель"
-              },
-              {
-                "id": 117,
-                "name": "Ромуз Елена",
-                "avatar": "/storage/images/avatar/2025/06/59a7f8/l-photo_5350549960074065771_y.jpg",
-                "position": "Администратор проектов"
-              },
-              {
-                "id": 11,
-                "name": "Барсов Кирилл",
-                "avatar": "/storage/images/avatar/2025/10/b4eee4/l-dsc_5693.jpg",
-                "position": "Старший менеджер по персоналу"
-              }
-            ]
-          }
-        ],
-        "viewCount": 47,
-        "isPinnedGlobally": false,
-        "isPinnedForUser": false
-      },
-      {
-        "id": 267,
-        "newsListId": 267,
-        "canEdit": false,
-        "title": "Farewell message: Беломытцев Егор!",
-        "description": null,
-        "imagePreview": "/storage/images/medialibrary/2026/996a9e/preview-img-1896.jpg",
-        "imageHat": "/storage/images/medialibrary/2026/996a9e/hat-watercolor-wild-flowers-border.jpg",
-        "category": "Farewell message",
-        "tags": [],
-        "content": "<p><span style=\"line-height: 2rem; font-size: 12pt;\">Всем привет!</span></p><p style=\"line-height: 115%;\"><span style=\"line-height: 2rem; font-size: 12pt;\">Сегодня последний день в компании у </span><span style=\"line-height: 2rem; font-size: 12pt;\"><mention class=\"mentioned-user\" contenteditable=\"false\" id=\"86\" label=\"Беломытцев Егор\" avatar=\"/storage/images/avatar/2025/04/cc96cc/l-photo_2025_04_29_13_23_07.jpg\" position=\"Инженер\" phone=\"+79995830059\" email=\"egor.belomytcev@universe-data.ru\" city=\"Санкт-Петербург\" department=\"1 и 2  линия поддержки\" manager=\"[object Object]\">Беломытцев Егор</mention> </span></p><p style=\"line-height: 115%;\"><span style=\"line-height: 2rem; font-size: 12pt;\">За более чем 5 лет Егор участвовал в становлении технической поддержки: был одним из тех, кто помогал выстроить процессы с самого начала и занимался самой первой настройкой ключевых интеграций.</span></p><p style=\"line-height: 115%;\"><span style=\"line-height: 2rem; font-size: 12pt;\">Отдельно отметим вклад в закрытие проектной поддержки по Сигме, он довёл задачи до результата и доблестно помог пройти сложный период на проекте. Также в течение длительного времени держал на себе значимую часть нагрузки по ГПН, обеспечивая стабильность и решение вопросов.<br><br>Спасибо за вовлечённость, ответственность и профессиональный подход. Желаем удачи в дальнейших начинаниях!</span><span class=\"an1\" char=\"🔥\">🔥</span></p>",
-        "createdBy": {
-          "id": 106,
-          "name": "@ Юник",
-          "avatar": "/storage/images/avatar/2025/04/b47c5e/l-iunik_2.png",
-          "position": null
-        },
-        "createdAt": "30 янв 2026, 14:39",
-        "createdAtDiff": "1 неделю назад",
-        "datePlan": null,
-        "enableComments": true,
-        "comments": [
-          {
-            "id": 454,
-            "canEdit": null,
-            "canDelete": null,
-            "createdBy": {
-              "id": 454,
-              "name": "",
-              "avatar": "",
-              "position": ""
-            },
-            "attachments": null,
-            "comment": null,
-            "date": null,
-            "dateDiff": null,
-            "reactions": {
-              "liked": false,
-              "countReactions": 0,
-              "users": []
-            }
-          },
-          {
-            "id": 455,
-            "canEdit": null,
-            "canDelete": null,
-            "createdBy": {
-              "id": 455,
-              "name": "",
-              "avatar": "",
-              "position": ""
-            },
-            "attachments": null,
-            "comment": null,
-            "date": null,
-            "dateDiff": null,
-            "reactions": {
-              "liked": false,
-              "countReactions": 0,
-              "users": []
-            }
-          },
-          {
-            "id": 456,
-            "canEdit": null,
-            "canDelete": null,
-            "createdBy": {
-              "id": 456,
-              "name": "",
-              "avatar": "",
-              "position": ""
-            },
-            "attachments": null,
-            "comment": null,
-            "date": null,
-            "dateDiff": null,
-            "reactions": {
-              "liked": false,
-              "countReactions": 0,
-              "users": []
-            }
-          },
-          {
-            "id": 457,
-            "canEdit": null,
-            "canDelete": null,
-            "createdBy": {
-              "id": 457,
-              "name": "",
-              "avatar": "",
-              "position": ""
-            },
-            "attachments": null,
-            "comment": null,
-            "date": null,
-            "dateDiff": null,
-            "reactions": {
-              "liked": false,
-              "countReactions": 0,
-              "users": []
-            }
-          }
-        ],
-        "count_comments": 4,
-        "reactions": [
-          {
-            "type": "U+2764",
-            "countReactions": 21,
-            "liked": false,
-            "users": [
-              {
-                "id": 130,
-                "name": "Чиграй Анастасия",
-                "avatar": "/storage/images/avatar/2025/09/3cc257/l-photo_2025_09_29_15_32_38.jpg",
-                "position": "Младший аналитик"
-              },
-              {
-                "id": 140,
-                "name": "Исаев Давид",
-                "avatar": "/storage/images/avatar/2025/12/7274d4/l-photo_2025_07_23_23_49_31.jpg",
-                "position": "Младший инженер по тестированию"
-              },
-              {
-                "id": 18,
-                "name": "Панина Наталья",
-                "avatar": "/storage/images/avatar/2025/04/82c73f/l-chik9802.jpg",
-                "position": "Руководитель"
-              }
-            ]
-          }
-        ],
-        "viewCount": 103,
-        "isPinnedGlobally": false,
-        "isPinnedForUser": false
-      },
-      {
-        "id": 266,
-        "newsListId": 266,
-        "canEdit": false,
-        "title": "Anniversary time: Барсов Кирилл!",
-        "description": null,
-        "imagePreview": "/storage/images/medialibrary/2026/8d87fb/preview-1769605235888.jpg",
-        "imageHat": "/storage/images/medialibrary/2026/8d87fb/hat-joyfulcongratulations-1438x-n7.jpg",
-        "category": "Anniversary time",
-        "tags": [],
-        "content": "<p><span class=\"an1\" char=\"🥳\">🥳</span><span style=\"line-height: 2rem; font-size: 12pt;\">Сегодня год в компании отмечает <mention class=\"mentioned-user\" contenteditable=\"false\" id=\"11\" label=\"Барсов Кирилл\" avatar=\"/storage/images/avatar/2025/10/b4eee4/l-dsc_5693.jpg\" position=\"Старший менеджер по персоналу\" phone=\"+79046455282\" telegram=\"barsovkv\" email=\"kirill.barsov@universe-data.ru\" city=\"Санкт-Петербург\" department=\"Отдел HR\" manager=\"[object Object]\">Барсов Кирилл</mention> <em>(Старший менеджер по персоналу)</em></span></p><p><span style=\"line-height: 2rem; font-size: 12pt;\">За это время Кирилл усилил нашу команду классными и амбициозными коллегами, помогал прокачиваться и всегда был готов выслушать и поддержать любой small talk. Более того, у нас появилась Гильдия Тестировщиков именно с подачи Кирилла!</span></p><p><span style=\"line-height: 2rem; font-size: 12pt;\">Кирилл, не останавливайся и продолжай так гореть работой! Рады, что ты с нами </span><span class=\"an1\" char=\"💙\">💙</span></p>",
-        "createdBy": {
-          "id": 106,
-          "name": "@ Юник",
-          "avatar": "/storage/images/avatar/2025/04/b47c5e/l-iunik_2.png",
-          "position": null
-        },
-        "createdAt": "28 янв 2026, 16:05",
-        "createdAtDiff": "1 неделю назад",
-        "datePlan": null,
-        "enableComments": true,
-        "comments": [
-          {
-            "id": 446,
-            "canEdit": null,
-            "canDelete": null,
-            "createdBy": {
-              "id": 446,
-              "name": "",
-              "avatar": "",
-              "position": ""
-            },
-            "attachments": null,
-            "comment": null,
-            "date": null,
-            "dateDiff": null,
-            "reactions": {
-              "liked": false,
-              "countReactions": 0,
-              "users": []
-            }
-          },
-          {
-            "id": 447,
-            "canEdit": null,
-            "canDelete": null,
-            "createdBy": {
-              "id": 447,
-              "name": "",
-              "avatar": "",
-              "position": ""
-            },
-            "attachments": null,
-            "comment": null,
-            "date": null,
-            "dateDiff": null,
-            "reactions": {
-              "liked": false,
-              "countReactions": 0,
-              "users": []
-            }
-          },
-          {
-            "id": 448,
-            "canEdit": null,
-            "canDelete": null,
-            "createdBy": {
-              "id": 448,
-              "name": "",
-              "avatar": "",
-              "position": ""
-            },
-            "attachments": null,
-            "comment": null,
-            "date": null,
-            "dateDiff": null,
-            "reactions": {
-              "liked": false,
-              "countReactions": 0,
-              "users": []
-            }
-          },
-          {
-            "id": 449,
-            "canEdit": null,
-            "canDelete": null,
-            "createdBy": {
-              "id": 449,
-              "name": "",
-              "avatar": "",
-              "position": ""
-            },
-            "attachments": null,
-            "comment": null,
-            "date": null,
-            "dateDiff": null,
-            "reactions": {
-              "liked": false,
-              "countReactions": 0,
-              "users": []
-            }
-          },
-          {
-            "id": 450,
-            "canEdit": null,
-            "canDelete": null,
-            "createdBy": {
-              "id": 450,
-              "name": "",
-              "avatar": "",
-              "position": ""
-            },
-            "attachments": null,
-            "comment": null,
-            "date": null,
-            "dateDiff": null,
-            "reactions": {
-              "liked": false,
-              "countReactions": 0,
-              "users": []
-            }
-          },
-          {
-            "id": 451,
-            "canEdit": null,
-            "canDelete": null,
-            "createdBy": {
-              "id": 451,
-              "name": "",
-              "avatar": "",
-              "position": ""
-            },
-            "attachments": null,
-            "comment": null,
-            "date": null,
-            "dateDiff": null,
-            "reactions": {
-              "liked": false,
-              "countReactions": 0,
-              "users": []
-            }
-          },
-          {
-            "id": 452,
-            "canEdit": null,
-            "canDelete": null,
-            "createdBy": {
-              "id": 452,
-              "name": "",
-              "avatar": "",
-              "position": ""
-            },
-            "attachments": null,
-            "comment": null,
-            "date": null,
-            "dateDiff": null,
-            "reactions": {
-              "liked": false,
-              "countReactions": 0,
-              "users": []
-            }
-          },
-          {
-            "id": 453,
-            "canEdit": null,
-            "canDelete": null,
-            "createdBy": {
-              "id": 453,
-              "name": "",
-              "avatar": "",
-              "position": ""
-            },
-            "attachments": null,
-            "comment": null,
-            "date": null,
-            "dateDiff": null,
-            "reactions": {
-              "liked": false,
-              "countReactions": 0,
-              "users": []
-            }
-          }
-        ],
-        "count_comments": 8,
-        "reactions": [
-          {
-            "type": "U+2764",
-            "countReactions": 21,
-            "liked": false,
-            "users": [
-              {
-                "id": 15,
-                "name": "Олимпиев Никита",
-                "avatar": "/storage/images/avatar/2025/04/5e69fb/l-islands_200.webp",
-                "position": "Директор"
-              },
-              {
-                "id": 111,
-                "name": "Шишарина Милана",
-                "avatar": "/storage/images/avatar/2025/05/9f751f/l-photo_2025_05_27_08_39_27.jpg",
-                "position": "Руководитель проектов"
-              },
-              {
-                "id": 123,
-                "name": "Агафонов Николай",
-                "avatar": "/storage/images/avatar/2025/08/393280/l-photo_5289877783171955239_y.jpg",
-                "position": "Младший инженер технической поддержки"
-              }
-            ]
-          }
-        ],
-        "viewCount": 87,
+        "viewCount": 62,
         "isPinnedGlobally": false,
         "isPinnedForUser": false
       }
     ],
     "pagination": {
-      "total": 272,
+      "total": 275,
       "count": 12,
       "perPage": 12,
       "currentPage": 1,

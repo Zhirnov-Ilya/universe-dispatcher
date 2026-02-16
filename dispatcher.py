@@ -1,15 +1,17 @@
 import time
 from telegram_delivery import TelegramDelivery
+from yandex_delivery import YandexDeliveryBot
 from datetime import datetime
 import asyncio
 
 class Dispatcher:
 
-    def __init__(self, adapter, storage, telegram, check_interval):
+    def __init__(self, adapter, storage, telegram, check_interval, yandex):
 
         self.adapter = adapter
         self.storage = storage
         self.telegram = telegram
+        self.yandex = yandex
         self.check_interval = check_interval
         self.running = False
 
@@ -30,9 +32,11 @@ class Dispatcher:
 
             total_new += len(new_news)
             
-            chat_ids = await self.storage.get_all_activate_users()
+            chat_ids = await self.storage.get_all_activate_users_tg()
+            logins = await self.storage.get_all_activate_users_yx()
             for news in new_news:
-                success = await self.telegram.send_to_many(news, chat_ids)
+                success_tg = await self.telegram.send_to_many(news, chat_ids)
+                success_yx = await self.yandex.send_to_many(news, logins)
 
         return total_new
 

@@ -35,18 +35,35 @@ class NewsStorage:
         print("В базе данных создана таблица sent_news")
 
         await self.connection.execute('''
-        CREATE TABLE IF NOT EXISTS users (
+        CREATE TABLE IF NOT EXISTS users_tg (
             user_id INTEGER PRIMARY KEY,
             chat_id INTEGER UNIQUE NOT NULL,
             user_name TEXT,
             is_active BOOLEAN DEFAULT 1)        
         ''')
-        print("В базе данных создана таблица users")
+        print("В базе данных создана таблица users_tg")
 
+        await self.connection.execute('''
+        CREATE TABLE IF NOT EXISTS users_yx (
+            login TEXT PRIMARY KEY,
+            is_active BOOLEAN DEFAULT 1
+        )
+        ''')
+        print("В базе данных создана таблица users_yx")
+
+        await self.connection.execute('''
+        CREATE TABLE IF NOT EXISTS user_tg_yx (
+        tg_id INTEGER,
+        yx_id TEXT,
+        FOREIGN KEY (tg_id) REFERENCES users_tg (user_id) ON DELETE CASCADE,
+        FOREIGN KEY (yx_id) REFERENCES users_yx (login) ON DELETE CASCADE,
+        PRIMARY KEY (tg_id, yx_id)
+        )
+        ''')
 
         await self.connection.commit()
     
-    async def initialize_last_id(self, source_code, default_id="hr_0"):
+    async def initialize_last_id(self, source_code, default_id):
         async with self.connection.execute(
             "SELECT COUNT(*) FROM sent_news WHERE source = ?", (source_code,)
         ) as cursor:
@@ -57,12 +74,102 @@ class NewsStorage:
                     (default_id, source_code)
                 )
                 await self.connection.commit()
-                print(f"Вставка начального значаения hr_id = {default_id}")
 
-    async def add_user(self, user_id, chat_id, user_name):
+    async def link_accounts(self, tg_id, yx_id):
+        await self.connection.execute('''
+        INSERT INTO user_tg_yx(tg_id, yx_id)
+        VALUES (?, ?)
+        ''', (tg_id, yx_id))
+        await self.connection.commit()
+    
+    async def get_tg_id_by_yx(self, yx_id):
+        async with self.connection.execute('''
+            SELECT tg_id FROM user_tg_yx WHERE yx_id = ?
+        ''', (yx_id,)) as cursor:
+            row = await cursor.fetchone()
+            return row[0] if row else None
+
+    async def add_user_yx(self, login):
         try:
             await self.connection.execute('''
-            INSERT OR REPLACE INTO users
+            INSERT OR REPLACE INTO users_yx
+            (login, is_active)
+            VALUES(?, 1)
+            ''', (login,))
+
+            await self.connection.commit()
+        
+        except Exception as ex:
+            print("Ошибка добавления пользователя: ", ex)
+            return False 
+    
+    async def get_all_activate_users_yx(self):
+        try:
+            async with self.connection.execute('''
+                SELECT login from users_yx WHERE is_active = 1
+            ''') as cursor:
+                results = await cursor.fetchall()
+                return [row[0] for row in results] if results else []
+        except Exception as ex:
+            print("Ошибка получения chat_id", ex)
+
+    async def subscribe_user_yx(self, login):
+            try:
+                await self.connection.execute(
+                    "UPDATE users_yx SET is_active = 1 WHERE login = ?", (login,)
+                )
+                await self.connection.commit()
+                return True
+            except Exception as ex:
+                print("Ошибка подпсики: ", ex)
+                return False
+    
+    async def unsubscribe_user_yx(self, login):
+
+        try:
+            await self.connection.execute(
+                "UPDATE users_yx SET is_active = 0 WHERE login = ?",
+                (login,)
+            )
+            await self.connection.commit()
+            return True
+        except Exception as e:
+            return False
+    
+    async def check_active_yx(self, login):
+        try:
+            async with self.connection.execute('''
+            SELECT is_active FROM users_yx WHERE login = ?
+            ''', (login, )) as cursor:
+
+                result = await cursor.fetchone()
+                if result:
+                    return True if result[0] == 1 else False
+                else: return False
+        except Exception as ex:
+            print("Ошибка проверки: ", ex)
+            return False
+    
+    async def check_exist_yx_login(self, login):
+        try:
+            async with self.connection.execute('''
+            SELECT is_active FROM users_yx WHERE login = ?
+            ''', (login, )) as cursor:
+
+                result = await cursor.fetchone()
+                if result:
+                    return True 
+                else: return False
+        except Exception as ex:
+            print("Ошибка проверки: ", ex)
+            return False
+
+
+
+    async def add_user_tg(self, user_id, chat_id, user_name):
+        try:
+            await self.connection.execute('''
+            INSERT OR REPLACE INTO users_tg
             (user_id, chat_id, user_name, is_active)
             VALUES (?, ?, ?, 1)
             ''', (user_id, chat_id, user_name))
@@ -72,11 +179,11 @@ class NewsStorage:
             print("Ошибка добавления пользователя: ", ex)
             return False
 
-    async def get_all_activate_users(self):
+    async def get_all_activate_users_tg(self):
 
         try:
             async with self.connection.execute('''
-                SELECT chat_id from users WHERE is_active = 1
+                SELECT chat_id from users_tg WHERE is_active = 1
             ''') as cursor:
                 
                 results = await cursor.fetchall()
@@ -84,10 +191,10 @@ class NewsStorage:
         except Exception as ex:
             print("Ошибка получения chat_id", ex)
     
-    async def subscribe_user(self, user_id):
+    async def subscribe_user_tg(self, user_id):
         try:
             await self.connection.execute(
-                "UPDATE users SET is_active = 1 WHERE user_id = ?", (user_id,)
+                "UPDATE users_tg SET is_active = 1 WHERE user_id = ?", (user_id,)
             )
             await self.connection.commit()
             return True
@@ -95,16 +202,30 @@ class NewsStorage:
             print("Ошибка подпсики: ", ex)
             return False
     
-    async def unsubsribe_user(self, user_id):
+    async def unsubscribe_user_tg(self, user_id):
 
         try:
             await self.connection.execute(
-                "UPDATE users SET is_active = 0 WHERE user_id = ?",
+                "UPDATE users_tg SET is_active = 0 WHERE user_id = ?",
                 (user_id,)
             )
             await self.connection.commit()
             return True
         except Exception as e:
+            return False
+    
+    async def check_active_tg(self, user_id):
+        try:
+            async with self.connection.execute('''
+            SELECT is_active FROM users_tg WHERE user_id = ?
+            ''', (user_id, )) as cursor:
+
+                result = await cursor.fetchone()
+                if result:
+                    return True if result[0] == 1 else False
+                else: return False
+        except Exception as ex:
+            print("Ошибка проверки: ", ex)
             return False
     
     async def get_last_id(self, source_code):
@@ -148,14 +269,9 @@ class NewsStorage:
 
 async def main():
     async with NewsStorage() as storage:
-        chat_ids = await storage.get_all_activate_users()
-        print(chat_ids)
-        await storage.add_user(15, 100, "Ilya")
-        await storage.unsubsribe_user(15)
-        await storage.subscribe_user(15)
-        last_id = await storage.get_last_id('hr_portal')
-        print(last_id)
-        chat_id = await storage.get_all_activate_users()
+        await storage.add_user_yx("Ilya")
+        # result = await storage.unsubscribe_user_tg(15)
+        chat_id = await storage.check_exist_yx_login("Ilya")
         print(chat_id)
 
 if __name__ == "__main__":
