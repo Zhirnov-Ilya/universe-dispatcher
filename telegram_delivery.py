@@ -44,18 +44,19 @@ class TelegramDelivery:
         
 
 
-    async def send_notification(self, news_item, chat_id=None):
+    async def send_notification(self, text, chat_id=None):
         target_chat = chat_id or self.default_chat_id
+        print(target_chat)
 
         if not target_chat:
             print("Не указан chat_id для отправки")
             return False
 
         try:
-            message = self._format_notification(news_item)
+            # message = self._format_notification(news_item)
             await self.bot.send_message(
                 chat_id = target_chat,
-                text = message,
+                text = text,
                 parse_mode = ParseMode.HTML,
                 disable_web_page_preview = True
             )
@@ -66,12 +67,12 @@ class TelegramDelivery:
             print(f"Ошибка отправки в Telegram: {e}")
             return False
 
-    async def send_to_many(self, news_item, chat_ids):
+    async def send_to_many(self, text, chat_ids):
         
         try:
             tasks = []
             for chat_id in chat_ids:
-                task = self.send_notification(news_item, chat_id)
+                task = self.send_notification(text, chat_id)
                 tasks.append(task)
             
             results = await asyncio.gather(*tasks, return_exceptions=True)
@@ -79,7 +80,7 @@ class TelegramDelivery:
             successful = 0
             failed = 0
 
-            print(f"Отправлено в Telegram: {news_item['title']}")
+            print(f"Отправлено в Telegram!")
             for result in results:
                 if isinstance(result, bool) and result:
                     successful += 1

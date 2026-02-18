@@ -111,7 +111,7 @@ class NewsStorage:
                 results = await cursor.fetchall()
                 return [row[0] for row in results] if results else []
         except Exception as ex:
-            print("Ошибка получения chat_id", ex)
+            print("Ошибка получения logins", ex)
 
     async def subscribe_user_yx(self, login):
             try:

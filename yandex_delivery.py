@@ -7,6 +7,9 @@ from dataclasses import dataclass
 from webhook_server import WebhookServer
 from storage import NewsStorage
 from yandex_adapter import YandexAdapter
+import html
+import re
+from telegram_delivery import TelegramDelivery
 
 class BotCommand():
     SUBSCRIBE_TG = "Подписаться на рассылку в Telegram"
@@ -51,13 +54,14 @@ class YandexDeliveryBot:
     THIN_SPACE = '\u2009'
     BUTTON_WIDTH = 60
     
-    def __init__(self, config: YandexBotConfig, storage):
+    def __init__(self, config: YandexBotConfig, storage, bot_tg: TelegramDelivery):
         self.count = 0
         self.config = config
         self.storage = storage
         self._session = None
         self._setup_ui_texts()
         self._setup_headers()
+        self.bot_tg = bot_tg
 
     def _setup_ui_texts(self):
 
@@ -134,7 +138,7 @@ class YandexDeliveryBot:
             return await resp.json()
 
     async def send_message(self, login: str, text: str):
-        return await self._make_request(
+        response = await self._make_request(
         'POST',
         self.config.send_message_url,
         json={
@@ -142,6 +146,7 @@ class YandexDeliveryBot:
             "text": text
         }
     )
+        return response and response.get('ok', False)
 
     async def send_welcome(self, login: str):
         return await self.send_message_with_buttons(login, self.WELCOME_MESSAGE)
@@ -159,8 +164,9 @@ class YandexDeliveryBot:
             data = await request.json()
 
             asyncio.create_task(self._process_webhook_data(data))
+            print(json.dumps(data, indent=2, ensure_ascii=False))
             return web.json_response({'ok': True}, status=200)
-            # print(json.dumps(data, indent=2, ensure_ascii=False))
+  
 
         except Exception as ex:
             print(f"Ошибка обработки вебхука: {ex}")
@@ -177,26 +183,26 @@ class YandexDeliveryBot:
 
         try:
             text = update.get('text')
+    
             if not text and 'forwarded_messages' in update:
                 text = update['forwarded_messages'][0].get('text')
             
-            images_itog = []
-            if 'images' in update and update['images']:
-                images = update['images']
-                for image in images:
-                    images_itog.append(image[-1]['file_id'])
-            elif 'forwarded_messages' in update:
-                forwarded = update['forwarded_messages'][0]
-                if 'images' in forwarded and forwarded['images']:
-                    for image in forwarded['images']:
-                        images_itog.append(image[-1]['file_id'])
-            
-            print("images_itog", images_itog)
+            # images_itog = []
+            # if 'images' in update and update['images']:
+            #     images = update['images']
+            #     for image in images:
+            #         images_itog.append(image[-1]['file_id'])
+            # elif 'forwarded_messages' in update:
+            #     forwarded = update['forwarded_messages'][0]
+            #     if 'images' in forwarded and forwarded['images']:
+            #         for image in forwarded['images']:
+            #             images_itog.append(image[-1]['file_id'])
+        
 
             user_login = update['from']['login']
             type_chat = update['chat']['type']
 
-            if type_chat == "private":
+            if type_chat == "group":
                 if text == "/start":
                     await self.handle_start(user_login)
                 elif text == "/link":
@@ -215,17 +221,19 @@ class YandexDeliveryBot:
                     await self.handle_status(user_login)
                 else:
                     await self.send_help(user_login)
-            elif type_chat == "group":
-                if images_itog:
-                    tasks = []
-                    for file_id in images_itog:
-                        tasks.append(self.download_file_by_id(file_id))
+            elif type_chat == "private":
+                # if images_itog:
+                #     tasks = []
+                #     for file_id in images_itog:
+                #         tasks.append(self.download_file_by_id(file_id))
                     
-                    files_bytes = await asyncio.gather(*tasks)
-                    for file_bytes in files_bytes:
-                        if file_bytes:
-                            await self.send_image(user_login, file_bytes)
+                #     files_bytes = await asyncio.gather(*tasks)
+                #     for file_bytes in files_bytes:
+                #         if file_bytes:
+                #             await self.send_image(user_login, file_bytes)
                 await self.send_message(user_login, text)
+                text = await self.parser_for_tg(text)
+                await self.bot_tg.send_to_many(text, ["5671771943"])
         except Exception as ex:
             print(f"Ошибка обработки вебхука {ex}")
 
@@ -330,8 +338,22 @@ class YandexDeliveryBot:
 
         return message
     
-    
-    async def send_notification(self, news_item, login):
+    async def parser_for_tg(self, text):
+        text = html.escape(text)
+
+        text = re.sub(r'\*\*(.*?)\*\*', r'<b>\1</b>', text)
+        text = re.sub(r'__(.*?)__', r'<i>\1</i>', text)
+        text = re.sub(r'~~(.*?)~~', r'<s>\1</s>', text)
+        text = re.sub(r'\+\+(.*?)\+\+', r'<u>\1</u>', text)
+        
+        
+        text = re.sub(r'\[(.*?)\]\((.*?)\)', r'<a href="\2">\1</a>', text)
+        
+        return text
+
+
+
+    async def send_notification(self, login, text):
 
         try:
             message = self._format_notification(news_item)
@@ -343,11 +365,11 @@ class YandexDeliveryBot:
             print(f"Ошибка отправки в Яндекс Мессенджер: {ex}")
             return False
 
-    async def send_to_many(self, news_item, logins):
+    async def send_to_many(self, logins, text):
         try:
             tasks = []
             for login in logins:
-                task = self.send_notification(news_item, login)
+                task = self.send_message(login, text)
                 tasks.append(task)
             
             results = await asyncio.gather(*tasks, return_exceptions=True)
@@ -355,7 +377,7 @@ class YandexDeliveryBot:
             successful = 0
             failed = 0
 
-            print(f"Отправлено в Яндекс Мессенджер: {news_item['title']}")
+            print(f"Отправлено в Яндекс Мессенджер!")
             for result in results:
                 if isinstance(result, bool) and result:
                     successful += 1
@@ -367,6 +389,8 @@ class YandexDeliveryBot:
 
         except Exception as ex:
             print("Ошибка в send_to_many: ", ex)
+    
+    
 
     async def __aenter__(self):
         self._session = aiohttp.ClientSession()
@@ -375,6 +399,7 @@ class YandexDeliveryBot:
     async def __aexit__(self, exc_type, exc_val, exc_tb):
         await self._session.close()
         print("Сессия закрыта")
+    
 
 
 
@@ -385,9 +410,8 @@ async def main():
         async with NewsStorage() as storage:
             config = Config()
             bot_config = YandexBotConfig.from_config(config)
-
-            bot = YandexDeliveryBot(bot_config, storage)
-            
+            bot_tg = TelegramDelivery(config.load_config('telegram')['bot_token'], "5671771943")
+            bot = YandexDeliveryBot(bot_config, storage, bot_tg)
             await bot.send_welcome(bot_config.default_chat_id)
 
             TEST_NEWS = {
@@ -398,8 +422,6 @@ async def main():
             'link': 'https://universe-data.ismyteam.ru/news/detail/266'
             }  
             logins = await storage.get_all_activate_users_yx()
-            print(logins)
-            await bot.send_to_many(TEST_NEWS, logins)
             server = WebhookServer(bot, "0.0.0.0", 8080)
             await server.start()
             webhook = await bot.set_webhook(config.load_config('server')['base_url'])
